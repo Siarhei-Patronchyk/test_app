@@ -3,32 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./normalize.css">
     <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 <body>
-    <header class="main-header divider-bottom clearfix">
-        <button class="float-left"></button>
+    <header class="main-header">
+        <label class="menu-btn-label">
+            <input type="checkbox">
+            <span class="menu-btn-icon-wrapper">
+                <span class="center"></span>
+            </span>
+        </label>
         <nav class="main-navigation">
-            <div>
-                <a href="#" class="nav-link">Rooms</a>
-                <a href="#" class="nav-link">Dining</a>
-                <a href="#" class="nav-link">Entertaments</a>
-                <a href="#" class="nav-link">Gathering</a>
-            </div>
-            <div class="logo"></div>
-            <div class="main-navigation">
-                <a href="#" class="nav-link">Welness</a>
-                <a href="#" class="nav-link">Discover</a>
-                <a href="#" class="nav-link">Residences</a>
-                <a href="#" class="nav-link">Offers</a>
-            </div>
+            <a href="#" class="nav-link">Rooms</a>
+            <a href="#" class="nav-link">Dining</a>
+            <a href="#" class="nav-link">Entertaments</a>
+            <a href="#" class="nav-link">Gathering</a>
+            <a href="#" class="logo"></a>
+            <a href="#" class="nav-link">Welness</a>
+            <a href="#" class="nav-link">Discover</a>
+            <a href="#" class="nav-link">Residences</a>
+            <a href="#" class="nav-link">Offers</a>
         </nav>
-        <button class="float-right">Reserve</button>
+        <a href="#" class="reserve-link">Reserve</a>
     </header>
-    <main class="main-content divider-bottom">
-        <section class="section-1 divider-bottom">
+    <main class="main-content divider-bottom grid">
+        <section class="section-1 divider-bottom divider-top">
             <div class="main-section-image image-1"></div>
             <article>
                 <h1>Welcome to San Diego</h1>
@@ -37,6 +39,7 @@
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 </p>
             </article>
+            <div class="calendar"></div>
         </section>
         <section class="section-2 section-image image-2"></section>
         <article class="section-3">
@@ -129,6 +132,32 @@
             </article>
         </section>
     </main>
-    <footer class="main-footer"></footer>
+    <footer class="main-footer">
+        <section>
+            <label>Stay Connected</label>
+            <input type="email">
+            <button class="btn btn-dark">Submit</button>
+        </section>
+        <section>
+            <h4>Follow Us</h4>
+            <ul class="style-type-none">
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </section>
+        <nav class="footer-nav">
+            <a href="#">Contact</a>
+            <a href="">Careers</a>
+            <a href="">Media</a>
+            <a href="">Hotel Magazine</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Your Privacy Rights</a>
+            <a href="">Terms</a>
+        </nav>
+        <section class="footer-adress">
+            111 Test Street, Some City, California, 111111
+        </section>
+    </footer>
 </body>
 </html>
