@@ -1,0 +1,280 @@
+$font-size: 12px;
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-size: $font-size;
+  background-color: #ffffff;
+  font-family: Arial, SansSerif, Helvetica;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+h1, h3 {
+  color: #202d3d;
+  font-family: "Roboto Condensed";
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #425363;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  color: #9a9aa6;
+  font-family: "Roboto Condensed";
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.main-header {
+  position: fixed;
+  height: 103px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.divider-bottom {
+  border-bottom: solid 5px #e2e2e2;
+}
+
+.style-type-none {
+  list-style-type: none;
+}
+
+.main-navigation {
+  display: flex;
+  align-content: center;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #202e39;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.main-navigation-toggle-btn {
+
+}
+
+.main-footer {
+  height: 400px;
+}
+
+.main-content {
+  display: grid;
+  padding-top: 108px;
+  
+  .image-1 {
+    background-image: url("./images/1.jpg");
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position-x: center;
+  }
+
+  .image-2 {
+    background-image: url("./images/2.jpg");
+  }
+
+  .image-3 {
+    background-image: url("./images/3.jpg");
+  }
+
+  .image-4 {
+    background-image: url("./images/4.jpg");
+  }
+
+  .image-5 {
+    background-image: url("./images/5.jpg");
+  }
+
+  .image-6 {
+    background-image: url("./images/6.jpg");
+  }
+
+  .image-7 {
+    background-image: url("./images/7.jpg");
+  }
+
+  .image-8 {
+    background-image: url("./images/8.jpg");
+  }
+
+  .image-9 {
+    background-image: url("./images/9.jpg");
+  }
+
+  .image-10 {
+    background-image: url("./images/10.jpg");
+  }
+
+  .image-2, .image-3, .image-4, .image-5, .image-6, .image-7, .image-8, .image-9, .image-10 {
+    background-size: auto;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-content {
+    grid-template-columns: auto;
+  }
+  .main-section-image {
+    height: 280px;
+  }
+
+  .section-image {
+    height: 212px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .main-section-image {
+    height: 435px;
+  }
+
+  .section-image {
+    height: 212px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    grid-template-columns: 16% 8% 8% 16% 16% 8% 8% 16%;
+    grid-column-gap: 0.5%;
+  }
+
+  .main-section-image {
+    height: 633px;
+  }
+
+  .section-image {
+    height: 589px;
+  }
+
+  .section-1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 10;
+  }
+
+  .section-2 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 2;
+  }
+
+  .section-3 {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 2;
+  }
+
+  .section-4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+
+    .section-image {
+      height: 455px;
+    }
+  }
+
+  .section-5 {
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 3;
+
+    .section-image {
+      height: 455px;
+    }
+  }
+
+  .section-6 {
+    grid-column-start: 3;
+    grid-column-end: 10;
+    grid-row-start: 4;
+
+    &.section-image {
+      height: 580px;
+    }
+  }
+
+  .section-7 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+  }
+
+  .section-8 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+  }
+
+  .section-9 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 5;
+  }
+
+  .section-10 {
+    grid-column-start: 6;
+    grid-column-end: 10;
+    grid-row-start: 5;
+  }
+
+  .section-8, .section-9, .section-10 {
+    .section-image {
+      height: 314px;
+    }
+  }
+
+  .section-11 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+  }
+
+  .section-12 {
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 6;
+  }
+
+  .section-11, .section-12 {
+    .section-image {
+      height: 455px;
+    }
+  }
+}
