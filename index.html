@@ -5,6 +5,7 @@
     <title>Title</title>
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./node_modules/js-datepicker/datepicker.css">
     <link rel="stylesheet" type="text/css" href="./normalize.css">
     <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
@@ -28,7 +29,7 @@
             <a href="#" class="nav-link">Residences</a>
             <a href="#" class="nav-link">Offers</a>
         </nav>
-        <a href="#" class="reserve-link">Reserve</a>
+        <a href="#/booking/step-1" target="_blank" class="reserve-link">Reserve</a>
     </header>
     <main class="main-content grid">
         <section class="area-1">
@@ -44,7 +45,7 @@
         <div class="calendar-area area-3">
             <div class="calendar-wrapper">
                 <div class="date-wrapper">
-                    <button class="btn btn-date">
+                    <button class="btn btn-date" id="arriveDate">
                         <span class="action">arrive</span>
                         <span class="date">09</span>
                         <span class="month">nov</span>
@@ -182,5 +183,7 @@
             111 Test Street, Some City, California, 111111
         </section>
     </footer>
+    <script src="./node_modules/js-datepicker/datepicker.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

@@ -63,6 +63,8 @@ article {
 .calendar-area {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+  padding: 1.9em;
 
   .calendar-wrapper {
     display: grid;
@@ -462,6 +464,16 @@ article {
 
   h3 {
     font-size: 2.6em;
+  }
+
+  .calendar-area {
+    justify-content: center;
+  }
+
+  .area-5 {
+    .more-link {
+      float: none;
+    }
   }
 }
 
