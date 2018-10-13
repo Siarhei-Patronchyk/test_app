@@ -1,33 +1,61 @@
-var picker = datepicker(document.querySelector('#arriveDate'), {
-    position: 'c', // Top right.
-    startDate: new Date(), // This month.
-    startDay: 1, // Calendar week starts on a Monday.
-    dateSelected: new Date(), // Today is selected.
-    disabledDates: [new Date('1/1/2050'), new Date('1/3/2050')], // Disabled dates.
-    minDate: new Date(2016, 5, 1), // June 1st, 2016.
-    maxDate: new Date(2099, 0, 1), // Jan 1st, 2099.
-    noWeekends: true, // Weekends will be unselectable.
-    formatter: function(el, date, instance) {
-        // This will display the date as `1/1/2017`.
-        el.value = date.toDateString();
-    },
-    onSelect: function(instance) {
-        // Show which date was selected.
-        console.log(instance.dateSelected);
-    },
-    onShow: function(instance) {
-        console.log('Calendar showing.');
-    },
-    onHide: function(instance) {
-        console.log('Calendar hidden.');
-    },
-    onMonthChange: function(instance) {
-        // Show the month of the selected date.
-        console.log(instance.currentMonthName);
-    },
-    customMonths: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-    customDays: ['S', 'M', 'T', 'W', 'Th', 'F', 'S'],
-    overlayPlaceholder: 'Enter a 4-digit year',
-    overlayButton: 'Go!',
-    disableMobile: false // Conditionally disabled on mobile devices.
-});
+(function () {
+    var datePicker = new SimplePicker('.main-content', {zIndex: 2});
+    var arriveDateBtn = document.getElementById('arriveDateBtn');
+    var departDateBtn = document.getElementById('departDateBtn');
+    var arriveDate = document.getElementById('arriveDate');
+    var departDate = document.getElementById('departDate');
+    var arriveMonth = document.getElementById('arriveMonth');
+    var departMonth = document.getElementById('departMonth');
+    var checkAvailabilityBtn = document.getElementById('checkBtn');
+    var ARRIVE_DATE;
+    var DEPART_DATE;
+    var currentDate;
+    var currentMonth;
+    var dateNow = new Date();
+
+    var openArrivePicker = function () {
+        currentDate = arriveDate;
+        currentMonth = arriveMonth;
+        datePicker.open()
+    };
+
+    var openDepartPicker = function () {
+        currentDate = departDate;
+        currentMonth = departMonth;
+        datePicker.open();
+    };
+
+    var setDateToNode = function(day, node, date) {
+        node.innerText = day;
+        node.setAttribute('data-fulldate', date.toLocaleDateString("en-US"));
+    };
+
+    var initDate = function () {
+        var date = dateNow.getDate();
+        var nextDate = new Date(dateNow.getFullYear(), dateNow.getMonth(), date + 1);
+
+        setDateToNode(date, arriveDate, dateNow);
+        setDateToNode(date + 1, departDate, nextDate);
+
+        arriveMonth.innerText = dateNow.toDateString().split(' ')[1];
+        departMonth.innerText = dateNow.toDateString().split(' ')[1];
+    };
+
+    var checkAvailability = function () {
+        ARRIVE_DATE = arriveDate.getAttribute('data-fulldate');
+        DEPART_DATE = departDate.getAttribute('data-fulldate');
+
+        location.href = '#/booking/step-1?arrive=' + ARRIVE_DATE + '&depart=' + DEPART_DATE;
+    };
+
+    arriveDateBtn.addEventListener('click', openArrivePicker, true);
+    departDateBtn.addEventListener('click', openDepartPicker, true);
+    checkAvailabilityBtn.addEventListener('click', checkAvailability, true);
+
+    datePicker.on('submit', function(date, readableDate){
+        setDateToNode(date.getDate(), currentDate, date);
+        currentMonth.innerText = date.toDateString().split(' ')[1];
+    });
+
+    initDate();
+})();

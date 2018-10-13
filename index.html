@@ -8,16 +8,20 @@
     <link rel="stylesheet" href="./node_modules/js-datepicker/datepicker.css">
     <link rel="stylesheet" type="text/css" href="./normalize.css">
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="dist/simplepicker.css">
 </head>
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 <body>
     <header class="main-header divider-bottom">
-        <label class="menu-btn-label">
-            <input type="checkbox">
+        <input type="checkbox" id="menuBtn" class="menu-toggle">
+        <label class="menu-btn-label"
+                role="button" for="menuBtn">
             <span class="menu-btn-icon-wrapper">
                 <span class="center"></span>
             </span>
         </label>
+        <label for="menuBtn" class="overlay"></label>
+        <a href="#" class="main-logo logo"></a>
         <nav class="main-navigation">
             <a href="#" class="nav-link">Rooms</a>
             <a href="#" class="nav-link">Dining</a>
@@ -45,20 +49,20 @@
         <div class="calendar-area area-3">
             <div class="calendar-wrapper">
                 <div class="date-wrapper">
-                    <button class="btn btn-date arrive-date" id="arriveDate">
+                    <button class="btn btn-date arrive-date" id="arriveDateBtn">
                         <span class="action">arrive</span>
-                        <span class="date">09</span>
-                        <span class="month">nov</span>
+                        <span class="date" id="arriveDate"></span>
+                        <span class="month" id="arriveMonth">nov</span>
                         <i class="fas fa-caret-down"></i>
                     </button>
-                    <button class="btn btn-date depart-date">
+                    <button class="btn btn-date depart-date" id="departDateBtn">
                         <span class="action">depart</span>
-                        <span class="date">10</span>
-                        <span class="month">nov</span>
+                        <span class="date" id="departDate"></span>
+                        <span class="month" id="departMonth">nov</span>
                         <i class="fas fa-caret-down"></i>
                     </button>
                 </div>
-                <button class="btn btn-dark">check availability</button>
+                <button class="btn btn-dark" id="checkBtn">check availability</button>
             </div>
         </div>
         <div class="divider divider-1"></div>
@@ -112,7 +116,7 @@
                 <p>
                     Join us this season for happenings including a Halloween Costume Contest, Floral Arrangement Classes and a Spa Pendry Trunk Show!
                 </p>
-                <a href="#" class="more-link"><span>Learn More</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                <a href="#" class="more-link"><i class="fas fa-minus"></i><span>Learn More</span></a>
             </article>
         </section>
         <section class="area-11">
@@ -122,7 +126,7 @@
                 <p>
                     Celebrate the holiday season with friends and family in San Diego. Reserve one suite and enjoy a second guest room with our compliments.
                 </p>
-                <a href="#" class="more-link"><span>Learn More</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                <a href="#" class="more-link"><i class="fas fa-minus"></i><span>Learn More</span></a>
             </article>
         </section>
         <section class="area-12">
@@ -132,7 +136,7 @@
                 <p>
                     Celebrate the holiday season with friends and family in San Diego. Reserve one suite and enjoy a second guest room with our compliments.
                 </p>
-                <a href="#" class="more-link"><span>Learn more</span><i class="fas fa-long-arrow-alt-right"></i></a>
+                <a href="#" class="more-link"><i class="fas fa-minus"></i><span>Learn more</span></a>
             </article>
         </section>
         <section class="area-13">
@@ -183,7 +187,7 @@
             111 Test Street, Some City, California, 111111
         </section>
     </footer>
-    <script src="./node_modules/js-datepicker/datepicker.min.js"></script>
+    <script src="dist/simplepicker.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Siarhei-Patronchyk/test_app#readme",
   "dependencies": {
-    "js-datepicker": "^3.3.2"
+    "js-datepicker": "^3.3.2",
+    "simplepicker": "^1.2.2"
   }
 }
