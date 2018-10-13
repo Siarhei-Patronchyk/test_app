@@ -1,9 +1,5 @@
 /* Variables */
 /* Main styles */
-html, body {
-  height: 100%;
-}
-
 body {
   font-size: 10px;
   color: #202D3A;
@@ -190,6 +186,7 @@ article {
   background-image: url("./images/logo.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 .main-header .menu-toggle {
   display: none;
@@ -319,7 +316,7 @@ article {
 }
 
 .grid {
-  display: -ms-grid;
+  display: -ms-grid !important;
   display: grid;
   grid-column-gap: 5px;
   -ms-grid-columns: 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr;
@@ -704,6 +701,29 @@ article {
   font-size: 12px;
 }
 
+.salsa-calendar {
+  top: 50% !important;
+  left: 50% !important;
+  margin-top: 250px;
+  margin-left: -110px;
+}
+.salsa-calendar:before {
+  display: none;
+}
+
+.calendar-overlay {
+  position: sticky;
+  position: fixed;
+  background-color: #000000;
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+
 @media screen and (max-width: 1199px) {
   .main-header {
     height: 75px;
@@ -715,6 +735,7 @@ article {
     display: block;
     flex: 1 1 100%;
     -ms-flex: 1 1 100%;
+    background-size: contain;
     background-position-x: 20px;
   }
   .main-header .main-navigation {
@@ -729,6 +750,7 @@ article {
     align-items: flex-start;
     justify-content: flex-start;
     padding-top: 10px;
+    left: 0;
   }
   .main-header .main-navigation .logo {
     display: none;

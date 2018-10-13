@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5f33c1a-5c0e-49c9-b81d-8ca40a4c97d4" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/require.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/logo.png" afterPath="$PROJECT_DIR$/images/logo.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/simplepicker.js" afterPath="$PROJECT_DIR$/dist/simplepicker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/simplepicker.node.js" afterPath="$PROJECT_DIR$/dist/simplepicker.node.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.js" afterPath="$PROJECT_DIR$/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css.map" afterPath="$PROJECT_DIR$/style.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.scss" afterPath="$PROJECT_DIR$/style.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -83,11 +91,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+            <state relative-caret-position="202">
+              <caret line="71" column="48" lean-forward="false" selection-start-line="71" selection-start-column="48" selection-end-line="71" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -96,19 +104,37 @@
       <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="771" column="50" lean-forward="true" selection-start-line="771" selection-start-column="50" selection-end-line="771" selection-end-column="50" />
+            <state relative-caret-position="95">
+              <caret line="368" column="31" lean-forward="true" selection-start-line="368" selection-start-column="31" selection-end-line="368" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="52" column="76" lean-forward="false" selection-start-line="52" selection-start-column="76" selection-end-line="52" selection-end-column="76" />
+            <state relative-caret-position="142">
+              <caret line="88" column="21" lean-forward="true" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SalsaCalendar.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dist/salsa-calendar-master/src/SalsaCalendar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="120" column="53" lean-forward="false" selection-start-line="120" selection-start-column="48" selection-end-line="120" selection-end-column="53" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <marker date="1539430399562" expanded="true" signature="18720:18724" ph="&lt;" />
+                <marker date="1539430399562" expanded="true" signature="18724:18728" ph="&lt;" />
+                <marker date="1539430399562" expanded="true" signature="19051:19055" ph="&lt;" />
+                <marker date="1539430399562" expanded="true" signature="19556:19560" ph="&gt;" />
+                <marker date="1539430399562" expanded="true" signature="20009:20013" ph="&gt;" />
+                <marker date="1539430399562" expanded="true" signature="20013:20017" ph="&gt;" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -126,23 +152,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>input</find>
-      <find>common-text-color</find>
-      <find>93949d</find>
-      <find>425363</find>
-      <find>sub</find>
-      <find>area-5</find>
-      <find>reserve</find>
-      <find>a:</find>
-      <find>.grid</find>
-      <find>email-section</find>
-      <find>btn-dar</find>
-      <find>.calendar-area</find>
-      <find>calendar-wrapper</find>
-      <find>wel</find>
-      <find>email-sec</find>
-      <find>main-footer</find>
-      <find>more-link</find>
       <find>learn</find>
       <find>menu-btn-icon-wrapper</find>
       <find>main-background-color</find>
@@ -152,10 +161,27 @@
       <find>ffffff</find>
       <find>$date-btn-background-color</find>
       <find>&amp;*</find>
-      <find>logo</find>
       <find>main-lo</find>
       <find>main-</find>
       <find>overla</find>
+      <find>.main-logo</find>
+      <find>logo</find>
+      <find>clone</find>
+      <find>cloneN</find>
+      <find>injectTemplate()</find>
+      <find>template</find>
+      <find>inject</find>
+      <find>positio</find>
+      <find>hide</find>
+      <find>dateFormats</find>
+      <find>onSelect</find>
+      <find>position</find>
+      <find>position</find>
+      <find>main-navi</find>
+      <find>today</find>
+      <find>datePick</find>
+      <find>ms-grid</find>
+      <find>display: -ms-gr</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -166,9 +192,13 @@
       <list>
         <option value="$PROJECT_DIR$/normalize.css" />
         <option value="$PROJECT_DIR$/dist/require.js" />
+        <option value="$PROJECT_DIR$/dist/template.js" />
+        <option value="$PROJECT_DIR$/dist/simplepicker.js" />
+        <option value="$PROJECT_DIR$/dist/simplepicker.node.js" />
+        <option value="$PROJECT_DIR$/dist/salsa-calendar-master/src/SalsaCalendar.js" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/main.js" />
         <option value="$PROJECT_DIR$/style.scss" />
-        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -216,6 +246,24 @@
             <path>
               <item name="test_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="test_app" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_app" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="salsa-calendar-master" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_app" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="salsa-calendar-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_app" type="462c0819:PsiDirectoryNode" />
               <item name="node_modules" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -223,6 +271,13 @@
               <item name="test_app" type="462c0819:PsiDirectoryNode" />
               <item name="node_modules" type="462c0819:PsiDirectoryNode" />
               <item name="simplepicker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_app" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="simplepicker" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -279,20 +334,21 @@
       <workItem from="1539276104001" duration="11188000" />
       <workItem from="1539287342271" duration="27319000" />
       <workItem from="1539376832374" duration="3422000" />
-      <workItem from="1539410186861" duration="11505000" />
+      <workItem from="1539410186861" duration="21255000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80827000" />
+    <option name="totallyTimeSpent" value="90577000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15756631" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27535102" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -445,14 +501,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/simplepicker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/require.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -474,26 +522,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.js">
+    <entry file="file://$PROJECT_DIR$/dist/template.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="52" column="76" lean-forward="false" selection-start-line="52" selection-start-column="76" selection-end-line="52" selection-end-column="76" />
+        <state relative-caret-position="304">
+          <caret line="85" column="5" lean-forward="false" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.scss">
+    <entry file="file://$PROJECT_DIR$/dist/simplepicker.node.js.map">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="771" column="50" lean-forward="true" selection-start-line="771" selection-start-column="50" selection-end-line="771" selection-end-column="50" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/simplepicker.js.map">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2897">
+          <caret line="0" column="1292" lean-forward="false" selection-start-line="0" selection-start-column="1292" selection-end-line="0" selection-end-column="1292" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/simplepicker.node.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="0" column="6790" lean-forward="false" selection-start-line="0" selection-start-column="6790" selection-end-line="0" selection-end-column="6790" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/simplepicker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="0" column="6889" lean-forward="false" selection-start-line="0" selection-start-column="6889" selection-end-line="0" selection-end-column="6889" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        <state relative-caret-position="202">
+          <caret line="71" column="48" lean-forward="false" selection-start-line="71" selection-start-column="48" selection-end-line="71" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/salsa-calendar-master/src/SalsaCalendar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="120" column="53" lean-forward="false" selection-start-line="120" selection-start-column="48" selection-end-line="120" selection-end-column="53" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1539430399562" expanded="true" signature="18720:18724" ph="&lt;" />
+            <marker date="1539430399562" expanded="true" signature="18724:18728" ph="&lt;" />
+            <marker date="1539430399562" expanded="true" signature="19051:19055" ph="&lt;" />
+            <marker date="1539430399562" expanded="true" signature="19556:19560" ph="&gt;" />
+            <marker date="1539430399562" expanded="true" signature="20009:20013" ph="&gt;" />
+            <marker date="1539430399562" expanded="true" signature="20013:20017" ph="&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="368" column="31" lean-forward="true" selection-start-line="368" selection-start-column="31" selection-end-line="368" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="88" column="21" lean-forward="true" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
           <folding />
         </state>
       </provider>

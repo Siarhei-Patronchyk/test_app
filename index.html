@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Test Hotel</title>
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="./node_modules/js-datepicker/datepicker.css">
+    <link rel="stylesheet" href="dist/SalsaCalendar.min.css">
     <link rel="stylesheet" type="text/css" href="./normalize.css">
     <link rel="stylesheet" type="text/css" href="./style.css">
     <link rel="stylesheet" href="dist/simplepicker.css">
 </head>
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 <body>
     <header class="main-header divider-bottom">
         <input type="checkbox" id="menuBtn" class="menu-toggle">
@@ -50,13 +50,17 @@
         <div class="calendar-area area-3">
             <div class="calendar-wrapper">
                 <div class="date-wrapper">
-                    <button class="btn btn-date arrive-date" id="arriveDateBtn">
+                    <button class="btn btn-date arrive-date"
+                            id="arriveDateBtn"
+                            type="button">
                         <span class="action">arrive</span>
                         <span class="date" id="arriveDate"></span>
                         <span class="month" id="arriveMonth">nov</span>
                         <i class="fas fa-caret-down"></i>
                     </button>
-                    <button class="btn btn-date depart-date" id="departDateBtn">
+                    <button class="btn btn-date depart-date"
+                            id="departDateBtn"
+                            type="button">
                         <span class="action">depart</span>
                         <span class="date" id="departDate"></span>
                         <span class="month" id="departMonth">nov</span>
@@ -65,6 +69,7 @@
                 </div>
                 <button class="btn btn-dark" id="checkBtn">check availability</button>
             </div>
+            <div class="calendar-overlay"></div>
         </div>
         <div class="divider divider-1"></div>
         <section class="area-4">
@@ -188,7 +193,7 @@
             111 Test Street, Some City, California, 111111
         </section>
     </footer>
-    <script src="dist/simplepicker.js"></script>
+    <script src="dist/SalsaCalendar.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

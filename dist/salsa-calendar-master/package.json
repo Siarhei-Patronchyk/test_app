@@ -1,0 +1,33 @@
+{
+  "name": "salsa-calendar",
+  "version": "1.0.16",
+  "description": "Salsa Calendar is a standalone pure JavaScript library created to generate date (range) pickers for hotel booking applications.",
+  "main": "build/SalsaCalendar.min.js",
+  "devDependencies": {
+    "css-loader": "^0.25.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2"
+  },
+  "scripts": {
+    "dev": "./node_modules/.bin/webpack -d --watch",
+    "build": "./node_modules/.bin/webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asterixcapri/salsa-calendar"
+  },
+  "keywords": [
+    "calendar",
+    "salsa"
+  ],
+  "author": "Caprionline SalsaLab",
+  "license": "LGPL",
+  "bugs": {
+    "url": "https://github.com/asterixcapri/salsa-calendar/issues"
+  }
+}
